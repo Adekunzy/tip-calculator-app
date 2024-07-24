@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./tip-calculator.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section>
+    <img src="./images/logo.svg" alt="">
+
+          <!-- left side of the container -->
+    <div class="section-container">
+      <div class="left">
+
+        <div class="bill">
+          <div class="bill-container">
+            <p></p>
+            <p class="error total_bill_err"></p>
+          </div>
+
+          <p>Bill</p>
+          <input type="text" id="total-bill" placeholder="0">
+          <div class="icon-img">
+          <img src="./images/icon-dollar.svg" alt="">
+          </div>
+
+        </div>
+        <div class="select-tip">
+          <p> Select Tip %</p>
+          <div class="select-btn">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="text" placeholder="Custom">
+          </div>
+        </div>
+        <div class="bill">
+          <div class="bill-container">
+            <p>bill</p>
+            <p class="error total_person_err"></p>
+          </div>
+          <p> Number of People</p>
+          <input type="text" id="total-people" placeholder="0">
+          <div class="icon-img">
+          <img src="./images/icon-person.svg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+               <!-- right side of the container -->
+      <div class="right">
+        <div class="tip-container">
+          <div class="tip-title">
+            <p> Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <div class="tip-amount">
+            <h1>$ <span class="tip">0.00</span></h1>
+            
+          </div>
+        </div>
+
+        <div class="total-container">
+          <div class="total-title">
+            <p> Total</p>
+            <span>/ person</span>
+          </div>
+          <div class="total-amount">
+            <h1 >$ <span class="amount">0.00</span></h1>
+          </div>
+        </div>
+        <div class="reset">
+        <button>Reset</button>
+        </div> 
+
+      </div>
+
+
+     
+
+    </div>
+  </section>
+
+  
+
+ 
+  
+  
+  
+  
+  
+  
+
+ <script src="app.js"></script>
+
+ 
+  
+
+  
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
